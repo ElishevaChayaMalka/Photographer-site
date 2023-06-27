@@ -1,0 +1,46 @@
+<div style="padding-top: 30px ;padding-left: 30% !important; text-align: center;" class="col-md-7 col-lg-8">
+  <form style="direction: rtl !important; text-align: right;" class="needs-validation" novalidate=""
+    [formGroup]="loginForm">
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <label for="" class="form-label">שם</label>
+        <input type="text" class="form-control" id="firstName" formControlName="name" placeholder="" value=""
+          required="">
+        <div class="invalid-feedbackName">
+
+        </div>
+        <p class="nameH1">
+        <p>
+      </div>
+      <br>
+      <div class="col-sm-6">
+        <label for="firstName" class="form-label">תגובה</label>
+        <textarea formControlName="feedb" class="form-control" id="firstName" placeholder="" value=""
+          required=""></textarea>
+      </div>
+      <div class="col-sm-6">
+        <label for="email" class="form-label">מייל <span class="text-muted"></span></label>
+        <input formControlName="email" type="email" class="form-control" id="email" placeholder="you@example.com">
+        <p class="invalid-feedbackEmail">
+         
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <label for="firstName" class="form-label">טלפון</label>
+        <input formControlName="phone" type="text" class="form-control" id="firstName" placeholder="" value=""
+          required="">
+        <div class="invalid-feedbackNum">
+        </div>
+      </div>
+
+    </div>
+    <br> <br>
+    <br>
+
+    <div> <button style="background-color: rgb(98, 216, 223); border-color: rgb(98, 216, 223);" (click)="submit()"
+        class="w-100 btn btn-primary btn-lg" type="submit">לשליחת התגובה</button>
+    </div>
+
+  </form>
+
+</div>

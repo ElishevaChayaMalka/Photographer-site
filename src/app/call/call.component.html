@@ -1,0 +1,51 @@
+
+<!-- <img src="../assets/images/images (1).png"> -->
+<div id="block">
+<form   class="needs-validation" novalidate="">
+    <div  class="row g-3">
+      <div class="col-sm-6">
+        <label for="firstName" class="form-label">שם</label>
+        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="my-name" value="" required name="">
+        <div class="invalid-feedback"  >
+        </div>
+      </div>
+      <br>
+      <div class="col-sm-6">
+        <label for="email" class="form-label">מייל <span class="text-muted"></span></label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        <div class="invalid-feedback">
+          אנא הזן כתובת אימייל חוקית 
+               </div>
+      </div>
+      <div class="col-sm-6">
+        <label for="firstName" class="form-label">טלפון</label>
+        <input type="text" class="form-control" id="firstName" placeholder="my-phone" value="" required="">
+        <div class="invalid-feedback">
+          נדרש מספר חוקי
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="address" class="form-label">כתובת</label>
+        <input type="text" class="form-control" id="address" placeholder="my-address" required="">
+        <div class="invalid-feedback">
+          נא להזין כתובת        </div>
+      </div>
+
+    </div>
+
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="save-info">
+      <label class="form-check-label" for="save-info">שמור מידע זה לפעם הבאה</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="save-info">
+      <label class="form-check-label" for="save-info">אני רוצה לקבל דיוור</label>
+    </div>
+    <hr class="my-4">
+
+
+
+    <button (click)="onClick()" class="w-100 btn btn-primary btn-lg" type="submit" style="background-color:rgb(98, 216, 223) ;border: none ;">שליחה</button>
+  </form>
+</div>
